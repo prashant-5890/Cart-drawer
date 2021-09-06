@@ -1,0 +1,194 @@
+/* Cart Drawer CSS */
+.cart__drawer {
+      display: block;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      z-index: 999999;
+      background: #fff;
+      -webkit-transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+      -moz-transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+      -ms-transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+      -o-transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+      transition: all 0.35s cubic-bezier(0.46, 0.01, 0.32, 1);
+      max-width: 100%;
+      overflow: auto;
+      right:-1000px;
+      width:400px;
+  	  margin: 0 0 0 auto;
+}
+
+.cv--show-cart__drawer:before{
+      position: fixed;
+      content: "";
+      background: rgba(0, 0, 0, 0.8);
+      height: 100%;
+      width: 100%;
+      z-index: 9999;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+}
+
+
+.cart__drawer.show-cart__drawer {
+      -webkit-transform: translateX(-400px);
+      -moz-transform: translateX(-400px);
+      -ms-transform: translateX(-400px);
+      -o-transform: translateX(-400px);
+      transform: translateX(-400px);
+      right: -400px;
+}
+
+.cart__drawer-section {
+      height: 100%;
+      background:white;
+}
+
+span.cross {
+      font-size: 18px;
+      cursor:pointer;
+}
+.cart__drawer .heading-text {
+    position: relative;
+}
+
+.cart__drawer .cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 20px;
+}
+.item-qty {
+      width: 35px;
+      height: 28px;
+      text-align: center;
+      background: none;
+      border: none;
+      padding: 0;
+}
+
+.minus {
+      height: 22px;
+      width: 22px;
+      line-height: 18px;
+      padding-right: 13px;
+      background: none;
+      border: 1px solid #000;
+      padding-top: 2px;
+      border-radius:3px;
+}
+
+a.cart__remove {
+      color: #c73948;
+      padding: 0;
+      border: none;
+      font-size: 10px;
+      display: inline-block;
+      text-align: left;
+      text-transform: uppercase;
+}
+
+button.cdrawer-chekout-btn {
+      width: 100%;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      background: #67baa0;
+      border: 1px solid #67baa0;
+      color: white;
+}
+
+.plus{
+      height: 22px;
+      width: 22px;
+      line-height: 18px;
+      padding-left:5px;
+      background: none;
+      border: 1px solid #000;
+      border-radius:3px;
+}
+.show-cart__drawer{
+      display: block;
+}
+.cart__drawer-top {
+      border-bottom: 1px solid #f7f8f9;
+}
+.cart__drawer .qtySelector {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.cart__drawer .qtySelector .item-qty {
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cart__drawer-top form {
+    margin-bottom: 0;
+}
+
+.cart__drawer .cart__drawer-form {
+    margin-bottom: 0;
+}
+
+.cart__drawer .remove__item {
+    margin: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.cart__drawer .remove__item a {
+    padding: 6px 30px;
+    border: 1px solid #67baa0;
+    color: #000;
+    font-size: 12px;
+}
+
+.cart__drawer-bottom .subtotal_text {
+    font-size: 18px;
+    padding-left: 30px;
+    margin: 10px 0px;
+    display: inline-block;
+    font-weight: bold;
+}
+.cart__drawer .cart_items {
+    float: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    margin: 15px 0px;
+}
+
+.cart__drawer::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.cart__drawer::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.cart__drawer::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear,
+									   40% 0%,
+									   75% 84%,
+									   from(#67baa0),
+									   to(#67baa0),
+									   color-stop(.6,#67baa0))
+}
