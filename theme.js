@@ -145,11 +145,10 @@ var addItem  = $('.btn--secondary').parent('.product-form--wide');
             data: addItem.serialize(),
         	dataType: 'json',
             success: function(data) {
-              $.getJSON('/cart.js', function(cart)
-			 {
-                $('.header-bar__cart-count').text(data.quantity);
-  				console.log(data.quantity);
-              });
+              $.getJSON('/cart.js', function(cart) {
+                   $('.cart-count').html(cart.item_count);
+                 	console.log(cart.item_count)
+                 });
             		},
             error: function(XMLHttpRequest) {
               console.log('error', XMLHttpRequest)
