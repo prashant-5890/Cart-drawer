@@ -10,3 +10,5 @@ cart drawer full guide.
 4 > copy code js and pest your theme.js
 
 5 > last step {% include 'cart-drawer' %} copy this code and paste theme.liquid after starting body tag.
+
+6 > don't missing attach jquery.min.js latest cnd link ni theme.liquid.
