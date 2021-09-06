@@ -12,7 +12,8 @@ function updateQuantity(line,quantity) {
 // ===============================================================================
 // Fetch product to cart Drawer
 $(document).ready(function() {
-  $('#AddToCart').click(function(e){
+  //** add your add to cart button class or id **//
+  $('#AddToCart').click(function(e){ 
     e.preventDefault();
     var data = $(this).parents('form').serialize();
     var qty = 1;
@@ -42,6 +43,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
   // Cart Drawer Open On Click Cart Icon
+ //* add your cart count class and id  *//
   $(document).on("click",".cart-page-link", function(e) {
     e.preventDefault();
     $('.cart__drawer').addClass('show-cart__drawer');
